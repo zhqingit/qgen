@@ -1,9 +1,14 @@
 # qgen
 ## a tool to annotate the coordinate. It is developed to easily get all gene informaiton from one coordinate.
 
-### Usage: ./qgen -f reference_file -i coordinates
-### -f: the ucsc table formatted reference files (separated by ,)
-### -i: the coordinates information (chr:coordinate:strand); the strand can be '*' if you are not sure about it. Multiple coordinates can be seperated by , or in a list file
+#### Usage: ./qgen -f reference_file -i coordinates
+##### -f: the ucsc table formatted reference files (separated by ,)
+##### -i: the coordinates information (chr:coordinate:strand); the strand can be '*' if you are not sure about it. Multiple coordinates can be seperated by , or in a list file
+
+### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i chr1:22021559:-
+### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i example/test.txt
+
+
 
 ### Output:
 #### Gene	: GeneName
@@ -21,10 +26,8 @@
 ####    DisToEnd: the distance to the block end of the coordinate (following the transcripts orders, separated by ,)
 
 
-#### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i chr1:22021559:-
-#### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i example/test.txt
 
-##### todo list:
-###### 1. compatible to the gtf format
-###### 2. infer the frame from two coordinates
-###### 3. Extract the mRNA or DNA sequece around a coordiante
+### todo list:
+#### 1. compatible to the gtf format
+#### 2. infer the frame from two coordinates
+#### 3. Extract the mRNA or DNA sequece around a coordiante
