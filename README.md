@@ -5,29 +5,29 @@
 ##### -f: the ucsc table formatted reference files (separated by ,)
 ##### -i: the coordinates information (chr:coordinate:strand); the strand can be '*' if you are not sure about it. Multiple coordinates can be seperated by , or in a list file
 
-### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i chr1:22021559:-
-### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i example/test.txt
+#### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i chr1:22021559:-
+#### example: ./qgen -r example/20200508_NCBIRef_hg19_test.txt -i example/test.txt
 
 
 
-### Output:
-#### Gene	: GeneName
-#### Chromsome: Chromsome
-#### Strand: Strand from gene
-#### Coordinate: Coordinate
-#### InputStrand: Strand from the input
-#### Transcripts: all transcripts
-####        UTR5: if the coordinate is in the UTR5 (following the transcripts orders, separated by ,)
-####        UTR3: if the coordinate is in the UTR3 (following the transcripts orders, separated by ,)
-####       Block: the block that the coordinate locates at, intron, exon, or intergenic (following the transcripts orders, separated by ,)
-####  BlockIndex: the block index that the coordinate locates at (following the transcripts orders, separated by ,)
-####       Frame: the frame infomation of the block that the coordinate locates at (following the transcripts orders, separated by ,)
-####  DisToStart: the distance to the block start of the coordinate (following the transcripts orders, separated by ,)
-####    DisToEnd: the distance to the block end of the coordinate (following the transcripts orders, separated by ,)
+#### Output:
+##### Gene	: GeneName
+##### Chromsome: Chromsome
+##### Strand: Strand from gene
+##### Coordinate: Coordinate
+##### InputStrand: Strand from the input
+##### Transcripts: all transcripts
+#####        UTR5: if the coordinate is in the UTR5 (following the transcripts orders, separated by ,)
+#####        UTR3: if the coordinate is in the UTR3 (following the transcripts orders, separated by ,)
+#####       Block: the block that the coordinate locates at, intron, exon, or intergenic (following the transcripts orders, separated by ,)
+#####  BlockIndex: the block index that the coordinate locates at (following the transcripts orders, separated by ,)
+#####       Frame: the frame infomation of the block that the coordinate locates at (following the transcripts orders, separated by ,)
+#####  DisToStart: the distance to the block start of the coordinate (following the transcripts orders, separated by ,)
+#####    DisToEnd: the distance to the block end of the coordinate (following the transcripts orders, separated by ,)
 
 
 
-### todo list:
-#### 1. compatible to the gtf format
-#### 2. infer the frame from two coordinates
-#### 3. Extract the mRNA or DNA sequece around a coordiante
+#### todo list:
+##### 1. compatible to the gtf format
+##### 2. infer the frame from two coordinates
+##### 3. Extract the mRNA or DNA sequece around a coordiante
